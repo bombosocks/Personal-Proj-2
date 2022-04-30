@@ -1,0 +1,200 @@
+
+    /* misc. */
+    body {
+        background-color: gainsboro;
+        margin:0;
+        padding:0;
+    }
+    .gradient {
+        background-image: linear-gradient(to right, #333, #39325e, #333);
+    }
+    
+        /* nav */
+    #navbar {
+        background-image: linear-gradient(to right, #333, #39325e, #333);
+        z-index: 9999;
+        overflow: hidden;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    #navbar a {
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        border-radius: 1em;
+        margin-top: 4.65em;
+        margin-right: .5em;
+        padding: .8em 1em;
+        text-decoration: none;
+    }
+    
+    #navbar a.active {
+        background-color: #111;
+    }
+    #navbar a:hover {
+        background-color: #111;
+    }
+    
+    
+    .navText {
+        font-size: small;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.644);
+    }
+    li {
+        display: inline-block;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: .8em 1em;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #111;
+    }
+    
+        /* directional */
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .myFloatRight {
+        float: right;
+        margin-left: 2em;
+    }
+    .myFloatLeft {
+        float: left;
+        margin-right: 2em;
+    }
+    
+    
+        /* headings & paragraphs */
+    h1 {
+        font-family: Didot, serif;
+        padding: .75em;
+        text-align: center;
+        text-decoration: underline;
+    }
+    h2 {
+        font-family: Didot, serif;
+        text-align: center;
+    }
+    p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: x-large;
+        text-align: justify;
+    }
+    
+    html {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    
+    .container {
+        margin: 4em;
+    }
+    
+        /* images */
+    #logo {
+        height: 100%;
+        width: auto;
+        padding: 1em;
+    }
+    
+    
+        /* sideshow */
+    .mySlides {
+        display: none;
+        box-sizing: border-box;
+    }
+    
+    .pic {
+        height: 20em; 
+        width: auto;
+        margin-bottom: 3em;
+    }
+    
+    .pic_start {
+        height: 20em;
+        width: auto;
+    }
+    /* Slideshow container */
+    .slideshowContainer {
+      max-width: 50em;
+      margin: auto;
+      box-sizing: border-box;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: .5em;
+      width: .5em;
+      margin: 0 0.1em;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* media queries */
+    @media screen and (max-width: 1024px) {
+        #logo {
+            display: none;
+        }
+        #navbar a {
+                float: right;
+                padding: .8em 0;
+                margin: 0;
+                text-align: center;
+                width: calc(95%/6);
+        }
+        .myFloatRight{
+            float: none;
+        }
+        .pic{
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+        }
+    }
+    
+    @media only screen and (max-width: 480-px) {
+        body {
+          background-color: lightblue;
+        }
+    }
+    

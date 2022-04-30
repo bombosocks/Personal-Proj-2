@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".">
+    <title>Saybrook Form</title>
+</head>
+
+<body>
+
+        <div id="heading">
+            Please tell us about your visit to Old Saybrok!
+        </div>
+        <hr>
+        <form action="process.php" method="POST" onsubmit="validateForm();">
+            <div id="name">
+                Please enter your name:
+                <input type="text" name="visitor-name" id="visitor-name" placeholder="Full Name" required>
+                <span class="asterisk">*</span>
+                <br>
+            </div>
+            <div id="family">
+                Number of people in your group:
+                <input type="number" name="visitor-count" id="visitor-count" placeholder="0" required>
+                <span class="asterisk">*</span>
+                <br>
+            </div>
+            <div id="date">
+                Date of visit:
+                <input type="date" name="visit-date" id="visit-date" max="" required>
+                <span class="asterisk">*</span>
+            </div>
+            <div id="fav-place">
+                <fieldset>
+                    <legend>Favorite Place</legend>
+                    <input type="radio" name="favorite-place" id="main-street" value="Main Street" required>
+                    <label for="main-street">Main Street</label>
+                    <br>
+                    <input type="radio" name="favorite-place" id="penny-lane-pub" value="Penny Lane Pub">
+                    <label for="penny-lane-pub">Penny Lane Pub</label>
+                    <br>
+                    <input type="radio" name="favorite-place" id="aspen" value="Aspen">
+                    <label for="aspen">Aspen</label>
+                    <br>
+                    <input type="radio" name="favorite-place" id="town-beach" value="Town Beach">
+                    <label for="town-beach">Town Beach</label>
+                    <br>
+                    <input type="radio" name="favorite-place" id="harvey's-beach" value="Harvey's Beach">
+                    <label for="harvey's-beach">Harvey's Beach</label>
+                    <br>
+                    <input type="radio" name="favorite-place" id="old saybrook yatch club" value="Old Saybrook Yatch Club">
+                    <label for="old-saybrook-yatch-club">Old Saybrook Yatch Club</label>
+                    <br>
+                    <input type="radio" name="favorite-place" id="the-point" value="The Point">
+                    <label for="the-point">The Point</label>
+                    <br>
+                </fieldset>
+            </div>
+            <div id="rate">
+                Rate your visit to our small town:
+                <br>
+                0<input type="range" name="rate-town" id="rate-town" min="0" max="10" step="1" value="0" list="set">10
+                <datalist id="set">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </datalist>
+            </div>
+            <div id="submit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+    </main>
+</body>
+
+</html>
